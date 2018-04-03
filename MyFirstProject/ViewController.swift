@@ -10,37 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
     // esta clase se crea automaticamente ¿con al primera vista?
-    //todas las clases de tipo visual (UI) tienen dos metodos por defecto: 1. viewDidLoad y 2. didReceiveMemoryWarning
+    //todas las clases de tipo visual (UI) tienen dos metodos por defecto: A. viewDidLoad y B. didReceiveMemoryWarning
     
-    //1. Creamos la var btn
-    //@IBOutlet: lo conecta con un elem visual + var_name:tipo_obj
+    //1. Creamos la var btn:
+    //@IBOutlet(Interface Block) lo conecta con un elem VISUAL, hace que aparezca un círculo vacío, son enchufes, se rellena en cuanto se conecta
+    //como hábito nombramos las var empezando con la letra del tipo de var
     
-    @IBOutlet var btnLogin:UIButton?    //?: no lo inicializamos (ya está inicializado en cuanto se carga la vista del Main.storyboard)
-    //Para empezar, es útil utilizar una var por cada elemento visual
-    //las @IBOutlet (Interface Block) hace que aparezca un círculo vacío, son enchufes, conecta con cualquier elem VISUAL
-    //las ? es para especificar que puede tener cualquier valor (???)
+    // @IBOutlet var var_name:tipo_obj
+    @IBOutlet var btnLogin:UIButton?    //?: no lo inicializamos (ya se inicializa en cuanto se carga la vista)
+                                        //? es para especificar que puede tener cualquier valor (???)
+    //Es útil utilizar una var por cada elemento visual
     @IBOutlet var txtUser:UITextField?
     @IBOutlet var txtPass:UITextField?
-    
-    //como hábito nombramos las var empezando con la letra del tipo de var
+  
     var sMiNombre:String = "Oli"
     
-    //1. el código que se ejecuta aquí, se ejecuta después a la carga visual
+    //A. el código que se ejecuta aquí, se ejecuta después a la carga visual
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    //2.
+    //B.
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
        
     }
+    
+    //para conectar a una ACCIÓN de un elem visual utilizamos
+    @IBAction func checkLoginButton() {
+        //si quiero coger el dato del textfield:
+        print("User: "+(txtUser?.text)!+" Pass: "+(txtPass?.text)!)
+        // ! makes sure it wont print it if its value is null
+    }
 
-    //necesita un enchufe, para vincular ACCIONES utilizamos @IBAction
     @IBAction func buttonClick() {
-        //si además quiero coger el dato del textfield
         print("que pacha chuli"+(txtUser?.text)!)
         if txtUser?.text == sMiNombre {
             //(para poder ejecutar algo necesitamos referenciarlo, le damos un identificador, clicamos en la trans inconcd y luego en ID)
@@ -52,7 +57,6 @@ class ViewController: UIViewController {
 
     //cuando quiero definir una transicion condicional entre dos vistas, una relación de transicioon entre dos vistas
     //cojemos la vista A (amarillo entera) y con el 'triggered S'  le marcamos como origen la vista B
-    
     
     
 }
