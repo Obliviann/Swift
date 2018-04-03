@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="rAU-aJ-4IP">
             <objects>
-                <viewController id="eei-65-BKr" sceneMemberID="viewController">
+                <viewController id="eei-65-BKr" customClass="ViewController" customModule="MyFirstProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uwV-N8-dhL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +80,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KIz-AM-AQa"/>
                     </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="bOC-6Z-jXC" id="Got-yI-apV"/>
+                        <outlet property="txtPass" destination="IAG-Ug-8Lm" id="rQX-23-Upg"/>
+                        <outlet property="txtUser" destination="kmo-mr-RLl" id="eam-nr-bvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YnH-4d-5kD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,6 +290,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RjV-Hv-eOF"/>
+        <segue reference="JUf-1J-PNa"/>
     </inferredMetricsTieBreakers>
 </document>
