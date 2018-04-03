@@ -9,15 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    // esta clase se crea automaticamente ¿con al primera vista?
     //todas las clases de tipo visual (UI) tienen dos metodos por defecto: 1. viewDidLoad y 2. didReceiveMemoryWarning
-
+    
+    //1. Creamos la var btn
+    //@IBOutlet: lo conecta con un elem visual + var_name:tipo_obj
+    
+    @IBOutlet var btnLogin:UIButton?    //?: no lo inicializamos (ya está inicializado en cuanto se carga la vista del Main.storyboard)
     //Para empezar, es útil utilizar una var por cada elemento visual
     //las @IBOutlet (Interface Block) hace que aparezca un círculo vacío, son enchufes, conecta con cualquier elem VISUAL
     //las ? es para especificar que puede tener cualquier valor (???)
     @IBOutlet var txtUser:UITextField?
     @IBOutlet var txtPass:UITextField?
-    @IBOutlet var btnLogin:UIButton?            // UIButtonv = UIButton()
     
     //como hábito nombramos las var empezando con la letra del tipo de var
     var sMiNombre:String = "Oli"
