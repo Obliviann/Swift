@@ -14,6 +14,7 @@
 		EFDB76C52073696C000ACC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDB76C32073696C000ACC90 /* LaunchScreen.storyboard */; };
 		EFDB76D02073696C000ACC90 /* MyFirstProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB76CF2073696C000ACC90 /* MyFirstProjectTests.swift */; };
 		EFDB76DB2073696C000ACC90 /* MyFirstProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB76DA2073696C000ACC90 /* MyFirstProjectUITests.swift */; };
+		EFDB76E920737DBC000ACC90 /* VCRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB76E820737DBC000ACC90 /* VCRegistrar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EFDB76D62073696C000ACC90 /* MyFirstProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDB76DA2073696C000ACC90 /* MyFirstProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstProjectUITests.swift; sourceTree = "<group>"; };
 		EFDB76DC2073696C000ACC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFDB76E820737DBC000ACC90 /* VCRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegistrar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EFDB76C12073696C000ACC90 /* Assets.xcassets */,
 				EFDB76C32073696C000ACC90 /* LaunchScreen.storyboard */,
 				EFDB76C62073696C000ACC90 /* Info.plist */,
+				EFDB76E820737DBC000ACC90 /* VCRegistrar.swift */,
 			);
 			path = MyFirstProject;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				EFDB76BD2073696C000ACC90 /* ViewController.swift in Sources */,
 				EFDB76BB2073696C000ACC90 /* AppDelegate.swift in Sources */,
+				EFDB76E920737DBC000ACC90 /* VCRegistrar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
