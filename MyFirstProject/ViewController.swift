@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController {    // la clase ViewController HEREDA (:) de la clase del sistema UIViewController es la clase padre,
+                                            //tiene una serie de métodos y los podemos usar desde esta clase
+    
     // esta clase se crea automaticamente ¿con al primera vista?
     //todas las clases de tipo visual (UI) tienen dos metodos por defecto: A. viewDidLoad y B. didReceiveMemoryWarning
     
@@ -41,8 +43,15 @@ class ViewController: UIViewController {
     //para conectar a una ACCIÓN de un elem visual utilizamos
     @IBAction func checkLoginButton() {
         //si quiero coger el dato del textfield:
-        print("User: "+(txtUser?.text)!+" Pass: "+(txtPass?.text)!)
-        // ! makes sure it wont print it if its value is null
+        print("User: "+(txtUser?.text)!+" Pass: "+(txtPass?.text)!)     // ! makes sure it wont print it if its value is null
+        
+        
+        if txtUser?.text=="Oli" && txtPass?.text=="pass" {
+            // para ejecutar una transición de un VC a otro, utilizamos un método de la clase UIViewControler, para llamarlo utilizamos self (para referirme a mi própia clase (ViewController)
+            self.performSegue(withIdentifier: "tranLogin", sender: self)    //yo mismo estoy llamando a este método, soy el remitente, el destino
+        } else {
+            print("Usuario: "+(txtUser?.text)!+" no está registrado")
+        }
     }
 
     @IBAction func buttonClick() {
