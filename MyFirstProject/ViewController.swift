@@ -57,8 +57,9 @@ class ViewController: UIViewController {    // la clase ViewController HEREDA (:
     @IBAction func buttonClick() {
         print("que pacha chuli"+(txtUser?.text)!)
         if txtUser?.text == sMiNombre {
-            //(para poder ejecutar algo necesitamos referenciarlo, le damos un identificador, clicamos en la trans inconcd y luego en ID)
+            //1. para poder ejecutar algo necesitamos referenciarlo, le damos un identificador a la transición (clicamos en la trans inconcd > 4ª opc > ID)
             //PARA EJECUTAR LA TRANSICIÓN USAMOS:
+            //self
             //el primer parámetro es el ID, y el segundo el sender (el remitente)
             self.performSegue(withIdentifier: "trlogin", sender: self) //self: YO SOY EL REMITENTE
         }

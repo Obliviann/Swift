@@ -9,6 +9,8 @@
 import UIKit
 
 class VCTable: UIViewController {
+    
+    @IBOutlet var tbMiTable:UITableView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
