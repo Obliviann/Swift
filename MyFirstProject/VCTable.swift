@@ -8,7 +8,8 @@
 
 import UIKit
 
-class VCTable: UIViewController {
+//1. añadimos los delegates (plantillas) con los métodos necesarios para que nuestra tabla funcione
+class VCTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tbMiTable:UITableView?
 
@@ -22,8 +23,22 @@ class VCTable: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //2. implementamos los dos métodos que me pide el protocolo de los delegates:
     
-
+    //A.devuelve la cantidad de celdas que quiero que se creen
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    //B.devuelve la celda concreta para la posición concreta
+    //se va a ejecutar una vez por cada celda especificada en el método anterior
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //creo un constante (let) de tipo cell, que representa la celda prototipo
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "miCelda1")!
+        return cell
+    }
+    
+    
     /*
     // MARK: - Navigation
 
