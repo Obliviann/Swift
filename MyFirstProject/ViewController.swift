@@ -48,12 +48,15 @@ class ViewController: UIViewController {    // la clase ViewController HEREDA (:
         
         if txtUser?.text=="Oli" && txtPass?.text=="pass" {
             // para ejecutar una transición de un VC a otro, utilizamos un método de la clase UIViewControler, para llamarlo utilizamos self (para referirme a mi própia clase (ViewController)
-            self.performSegue(withIdentifier: "tranLogin", sender: self)    //yo mismo estoy llamando a este método, soy el remitente, el destino
+            //yo mismo estoy llamando a este método, soy el remitente, el destino
+            self.performSegue(withIdentifier: "tranLogin", sender: self)
+            print("Usuario: "+(txtUser?.text)!+" ESTÁ registrado")
         } else {
             print("Usuario: "+(txtUser?.text)!+" no está registrado")
         }
     }
 
+    //esto no lo estamos usando
     @IBAction func buttonClick() {
         print("que pacha chuli"+(txtUser?.text)!)
         if txtUser?.text == sMiNombre {

@@ -15,6 +15,9 @@ class VCTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //conectamos los delegates y sus métodos a la tabla visual a través de código mejor que de forma visual:
+        tbMiTable?.delegate = self
+        tbMiTable?.dataSource = self
 
         // Do any additional setup after loading the view.
     }
