@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eei-65-BKr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJ2-7c-0sN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -245,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="353" y="-505"/>
         </scene>
-        <!--Item 1-->
+        <!--Tabla-->
         <scene sceneID="f8S-MG-fiH">
             <objects>
-                <viewController id="cJ2-7c-0sN" customClass="VCTable" customModule="MyFirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cJ2-7c-0sN" userLabel="Tabla" customClass="VCTable" customModule="MyFirstProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqH-Nm-0zi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,6 +268,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFR-OG-9YM">
                                                     <rect key="frame" x="27" y="-5" width="92" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Primer item - Tabla (5 campos)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgJ-zU-9mz">
                                                     <rect key="frame" x="138" y="11" width="237" height="21"/>
@@ -279,6 +280,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imgImage" destination="sFR-OG-9YM" id="WyZ-iH-63p"/>
                                             <outlet property="lblName" destination="HgJ-zU-9mz" id="lyH-OH-0aP"/>
                                         </connections>
                                     </tableViewCell>

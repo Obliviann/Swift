@@ -13,6 +13,7 @@ class VCTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tbMiTable:UITableView?
 
+    //este método Load, cuando se carga la clase, llama a la BBDD, que le devuelve un array con datos (en vez de usar valores estáticos)
     override func viewDidLoad() {
         super.viewDidLoad()
         //conectamos los delegates y sus métodos a la tabla visual a través de código mejor que de forma visual:
@@ -41,24 +42,36 @@ class VCTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
                                                                             //casteamos. Fprzar que la cell que creamos, la defina como TVCMiCelda y así poder modificarla a mi gusto.
         if (indexPath.row==0) {
             cell.lblName?.text="EVA00"
+            cell.imgImage?.image = UIImage(named:"Rei_Ayanami.jpg")
         }
         if (indexPath.row==1) {
             cell.lblName?.text="EVA01"
+            cell.imgImage?.image = UIImage(named:"EVA-1.jpg")
         }
         if (indexPath.row==2) {
             cell.lblName?.text="EVA02"
+            cell.imgImage?.image = UIImage(named:"EVA-2.jpg")
         }
         if (indexPath.row==3) {
             cell.lblName?.text="EVA03"
+            cell.imgImage?.image = UIImage(named:"EVA-3.jpg")
         }
         if (indexPath.row==4) {
-            cell.lblName?.text="EVA04"
+            cell.lblName?.text="NERV"
+            cell.imgImage?.image = UIImage(named:"NERV")
         }
-        
         
         return cell
     }
     
+    //más métodos:
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(" %d he seleccionado la celda: ", indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        print(" %d he DEseleccionado la celda: ", indexPath.row)
+    }
     
     /*
     // MARK: - Navigation

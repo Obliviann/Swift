@@ -12,7 +12,8 @@ class TVCMiCelda: UITableViewCell {
     
     //queremos que el label vidsual esté conectado a esta var
     @IBOutlet var lblName:UILabel?
-
+    @IBOutlet var imgImage: UIImageView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
