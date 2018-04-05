@@ -37,7 +37,9 @@ class VCTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //se va a ejecutar una vez por cada celda especificada en el método anterior
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //creo un constante (let) de tipo cell, que representa la celda prototipo
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "miCelda1")!
+        let cell : TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "miCelda1") as! TVCMiCelda
+                                                                            //casteamos. Fprzar que la cell que creamos, la defina como TVCMiCelda y así poder modificarla a mi gusto.
+        cell.lblName?.text="EVA"
         return cell
     }
     
