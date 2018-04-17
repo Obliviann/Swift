@@ -10,9 +10,9 @@ import UIKit
 
 class TVCMiCelda: UITableViewCell {
     
-    //queremos que el label vidsual esté conectado a esta var
+    //queremos que el label visual esté conectado a esta var
     @IBOutlet var lblName:UILabel?
-    @IBOutlet var imgImage: UIImageView?
+    @IBOutlet var imgImage:UIImageView?
     
     override func awakeFromNib() {
         super.awakeFromNib()

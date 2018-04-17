@@ -30,7 +30,28 @@ class VCCollection: UIViewController, UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //Devuelve una celda que creamos:
-        let cell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "miCelda2", for: indexPath)
+        let cell : CVCMiCelda2 = collectionView.dequeueReusableCell(withReuseIdentifier: "miCelda2", for: indexPath) as! CVCMiCelda2
+        
+        if (indexPath.row==0) {
+            cell.lblName2?.text="EVA00"
+            cell.imgImage2?.image = UIImage(named:"Rei_Ayanami.jpg")
+        }
+        if (indexPath.row==1) {
+            cell.lblName2?.text="EVA01"
+            cell.imgImage2?.image = UIImage(named:"EVA-1.jpg")
+        }
+        if (indexPath.row==2) {
+            cell.lblName2?.text="EVA02"
+            cell.imgImage2?.image = UIImage(named:"EVA-2.jpg")
+        }
+        if (indexPath.row==3) {
+            cell.lblName2?.text="EVA03"
+            cell.imgImage2?.image = UIImage(named:"EVA-3.jpg")
+        }
+        if (indexPath.row==4) {
+            cell.lblName2?.text="NERV"
+            cell.imgImage2?.image = UIImage(named:"NERV")
+        }
         return cell
     }
 
