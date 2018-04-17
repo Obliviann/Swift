@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF126C7E20767E840057F0B8 /* TVCMiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF126C7D20767E840057F0B8 /* TVCMiCelda.swift */; };
 		EF2674F92075214700EBFF61 /* VCTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2674F82075214700EBFF61 /* VCTable.swift */; };
+		EF52D3D42085FCF0003B8EB0 /* VCCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52D3D32085FCF0003B8EB0 /* VCCollection.swift */; };
 		EFDB76BB2073696C000ACC90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB76BA2073696C000ACC90 /* AppDelegate.swift */; };
 		EFDB76BD2073696C000ACC90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB76BC2073696C000ACC90 /* ViewController.swift */; };
 		EFDB76C02073696C000ACC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDB76BE2073696C000ACC90 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		EF126C7D20767E840057F0B8 /* TVCMiCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCMiCelda.swift; sourceTree = "<group>"; };
 		EF2674F82075214700EBFF61 /* VCTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTable.swift; sourceTree = "<group>"; };
+		EF52D3D32085FCF0003B8EB0 /* VCCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCollection.swift; sourceTree = "<group>"; };
 		EFDB76B72073696B000ACC90 /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDB76BA2073696C000ACC90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFDB76BC2073696C000ACC90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				EFDB76E820737DBC000ACC90 /* VCRegistrar.swift */,
 				EF2674F82075214700EBFF61 /* VCTable.swift */,
 				EF126C7D20767E840057F0B8 /* TVCMiCelda.swift */,
+				EF52D3D32085FCF0003B8EB0 /* VCCollection.swift */,
 			);
 			path = MyFirstProject;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				EFDB76BD2073696C000ACC90 /* ViewController.swift in Sources */,
 				EF2674F92075214700EBFF61 /* VCTable.swift in Sources */,
+				EF52D3D42085FCF0003B8EB0 /* VCCollection.swift in Sources */,
 				EFDB76BB2073696C000ACC90 /* AppDelegate.swift in Sources */,
 				EF126C7E20767E840057F0B8 /* TVCMiCelda.swift in Sources */,
 				EFDB76E920737DBC000ACC90 /* VCRegistrar.swift in Sources */,
