@@ -39,6 +39,7 @@ class VCTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //creo un constante (let) de tipo cell, que representa la celda prototipo
         let cell : TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "miCelda1") as! TVCMiCelda
+                                                                                        //personalizo la clase de mi Celda
                                                                             //casteamos. Fprzar que la cell que creamos, la defina como TVCMiCelda y así poder modificarla a mi gusto.
         if (indexPath.row==0) {
             cell.lblName?.text="EVA00"
