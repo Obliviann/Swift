@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {    // la clase ViewController HEREDA (:) de la clase del sistema UIViewController es la clase padre,
-                                            //tiene una serie de métodos y los podemos usar desde esta clase
+class ViewController: UIViewController { // la clase ViewController HEREDA (:) de la clase del sistema UIViewController es la clase padre,
+                                        //tiene una serie de métodos y los podemos usar desde esta clase
     
     // esta clase se crea automaticamente ¿con al primera vista?
     //todas las clases de tipo visual (UI) tienen dos metodos por defecto: A. viewDidLoad y B. didReceiveMemoryWarning
