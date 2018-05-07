@@ -22,23 +22,18 @@ class DataHolder: NSObject {
     func nombreCelda(num:Int) -> NSString {
         if (num==0) {
         return "EVA00"
-        //cell.imgImage2?.image = UIImage(named:"Rei_Ayanami.jpg")
         }
         if (num==1) {
         return "EVA01"
-        //cell.imgImage2?.image = UIImage(named:"EVA-1.jpg")
         }
         if (num==2) {
         return "EVA02"
-        //cell.imgImage2?.image = UIImage(named:"EVA-2.jpg")
         }
         if (num==3) {
         return "EVA03"
-        //cell.imgImage2?.image = UIImage(named:"EVA-3.jpg")
         }
         if (num==4) {
         return "NERV"
-        //cell.imgImage2?.image = UIImage(named:"NERV")
         }
         
         return ""
