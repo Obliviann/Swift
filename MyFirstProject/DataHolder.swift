@@ -38,5 +38,4 @@ class DataHolder: NSObject {
         
         return ""
     }
-    
 }
