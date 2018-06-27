@@ -7,6 +7,8 @@
 //
 
 import UIKit
+// Código de inicialización para añadir Firebase a tu app
+//1. Importamos el módulo de Firebase
 import Firebase
 
 @UIApplicationMain
@@ -16,7 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+        //2. Recomendado poner dentro del didFinishLaunching (se ejecuta despues de que la app arranque)
+        //3. LLamamos al Dataholder. Configuramos una instancia compartida de FirebaseApp
+        DataHolder.sharedInstance.initFirebase()
+        
         return true
     }
 

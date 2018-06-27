@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class DataHolder: NSObject {
     
@@ -18,6 +20,19 @@ class DataHolder: NSObject {
     static let sharedInstance:DataHolder=DataHolder()
     
     var numCeldas:UInt=5;
+    
+    //importamos el objeto firestoredatabase, que es una instanciación del Firestore
+    //var fireStoreDB:Firestore?
+    
+    func initFirebase() {
+        //(1.,2.,3. -> AppDelegate)
+        //4. aquí añadimos Firebase a la aplicación
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
+        //la clase estática firestore tiene un método que le devuelve la instancia
+        //fireStoreDB = Firestore.firestore()
+    }
     
     func nombreCelda(num:Int) -> NSString {
         if (num==0) {
@@ -38,5 +53,8 @@ class DataHolder: NSObject {
         
         return ""
     }
+    
+
+    
     
 }
