@@ -6,6 +6,10 @@ target 'MyFirstProject' do
   use_frameworks!
 
   # Pods for MyFirstProject
+  pod 'Firebase/Core' #elementos básicos de Firebase core=centro
+  pod 'Firebase/Auth'
+  # pod 'Firebase/Database'
+  # pod 'Firebase/Firestore'
 
   target 'MyFirstProjectTests' do
     inherit! :search_paths
@@ -16,11 +20,5 @@ target 'MyFirstProject' do
     inherit! :search_paths
     # Pods for testing
   end
-
-
-  pod 'Firebase/Core'
-  # pod 'Firebase/Database'
-  # pod 'Firebase/Auth'
-  # pod 'Firebase/Firestore'
 
 end

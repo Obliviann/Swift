@@ -18,10 +18,10 @@ class ViewController: UIViewController { // la clase ViewController HEREDA (:) d
     //@IBOutlet(Interface Block) lo conecta con un elem VISUAL, hace que aparezca un círculo vacío, son enchufes, se rellena en cuanto se conecta
     //como hábito nombramos las var empezando con la letra del tipo de var
     
+    //Es útil utilizar una var por cada elemento visual
     // @IBOutlet var var_name:tipo_obj
     @IBOutlet var btnLogin:UIButton?    //?: no lo inicializamos (ya se inicializa en cuanto se carga la vista)
                                         //? es para especificar que puede tener cualquier valor (???)
-    //Es útil utilizar una var por cada elemento visual
     @IBOutlet var txtUser:UITextField?
     @IBOutlet var txtPass:UITextField?
   

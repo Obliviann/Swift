@@ -133,6 +133,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Aceptar"/>
                                 <connections>
+                                    <action selector="registerButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="SsP-je-mTH"/>
                                     <segue destination="RkP-qe-TDi" kind="show" id="RjV-Hv-eOF"/>
                                 </connections>
                             </button>
@@ -215,6 +216,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtNewPass" destination="aO0-44-wit" id="S3f-ZV-i26"/>
+                        <outlet property="txtNewUser" destination="Ad4-2I-joq" id="8bb-mU-zAJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,6 +366,6 @@
         <image name="LOGO" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8cO-H7-C4X"/>
+        <segue reference="RjV-Hv-eOF"/>
     </inferredMetricsTieBreakers>
 </document>

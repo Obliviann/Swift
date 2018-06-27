@@ -9,6 +9,9 @@
 import UIKit
 
 class VCRegistrar: UIViewController {
+    
+    @IBOutlet var txtNewUser:UITextField?
+    @IBOutlet var txtNewPass:UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,9 @@ class VCRegistrar: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func registerButton() {
+        
+    }
 
     /*
     // MARK: - Navigation
