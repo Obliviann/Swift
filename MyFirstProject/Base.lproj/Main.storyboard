@@ -181,7 +181,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancelar"/>
                                 <connections>
-                                    <segue destination="eei-65-BKr" kind="show" id="dwT-z7-XSl"/>
+                                    <segue destination="eei-65-BKr" kind="show" identifier="transReg" id="dwT-z7-XSl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpr-Yt-aWQ">
@@ -217,6 +217,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="txtEmail" destination="o62-fG-kfK" id="H4x-Rn-FZ2"/>
                         <outlet property="txtNewPass" destination="aO0-44-wit" id="S3f-ZV-i26"/>
                         <outlet property="txtNewUser" destination="Ad4-2I-joq" id="8bb-mU-zAJ"/>
                     </connections>

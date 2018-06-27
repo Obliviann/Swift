@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class VCRegistrar: UIViewController {
     
     @IBOutlet var txtNewUser:UITextField?
+    @IBOutlet var txtEmail:UITextField?
     @IBOutlet var txtNewPass:UITextField?
 
     override func viewDidLoad() {
@@ -25,7 +27,18 @@ class VCRegistrar: UIViewController {
     }
     
     @IBAction func registerButton() {
-        
+        //Create new users
+        //FIRAuth : clase estática
+        //auth() : objeto dentro de dicha clase estática
+        //createUser() : método del objeto auth()
+        //dos parámetros de entrada + dos outputs (objeto user con toda la info y error)
+        Auth.auth().createUser(withEmail: (txtEmail?.text)!, password: (txtNewPass?.text)!) { (user, error) in
+            if (error==nil){ //si no hay error
+                self.performSegue(withIdentifier: "transReg", sender: self)
+            } else {
+                print("ERROR EN REGISTRO: ", error)
+            }
+        }
     }
 
     /*
