@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController { // la clase ViewController HEREDA (:) de la clase del sistema UIViewController es la clase padre,
                                         //tiene una serie de métodos y los podemos usar desde esta clase
@@ -41,26 +42,38 @@ class ViewController: UIViewController { // la clase ViewController HEREDA (:) d
     }
     
     //para conectar a una ACCIÓN de un elem visual utilizamos
-    @IBAction func checkLoginButton() {
-        //si quiero coger el dato del textfield:
-        print("User: "+(txtUser?.text)!+" Pass: "+(txtPass?.text)!)     // ! makes sure it wont print it if its value is null
+    @IBAction func checkLoginButton() {     //? -> inicializarlo   ! -> desempaquetarlo:
+        Auth.auth().signIn(withEmail: (txtUser?.text)!, password: (txtPass?.text)!) { (user, error) in
+            if(error==nil){
+                self.performSegue(withIdentifier: "tranLogin", sender: self)
+            }else{
+                print("ERROR EN LOGIN: ",error!)
+            }
+        }
         
+        
+        /*          DATOS FIJOS ESCRITOS A MANO
+        print("User: "+(txtUser?.text)!+" Pass: "+(txtPass?.text)!)//! makes sure it wont print it if value is null
         
         if txtUser?.text=="Oli" && txtPass?.text=="pass" {
-            // para ejecutar una transición de un VC a otro, utilizamos un método de la clase UIViewControler, para llamarlo utilizamos self (para referirme a mi própia clase (ViewController)
-            //yo mismo estoy llamando a este método, soy el remitente, el destino
+            // para ejecutar una transición de un VC a otro, utilizamos un método de la clase UIViewControler,
+            // para llamarlo utilizamos self (para referirme a mi própia clase (ViewController)
+            // yo mismo estoy llamando a este método, soy el remitente, el destino
             self.performSegue(withIdentifier: "tranLogin", sender: self)
             print("Usuario: "+(txtUser?.text)!+" ESTÁ registrado")
         } else {
             print("Usuario: "+(txtUser?.text)!+" no está registrado")
         }
+        */
+        
     }
 
     //esto no lo estamos usando
     @IBAction func buttonClick() {
         print("que pacha chuli"+(txtUser?.text)!)
         if txtUser?.text == sMiNombre {
-            //1. para poder ejecutar algo necesitamos referenciarlo, le damos un identificador a la transición (clicamos en la trans inconcd > 4ª opc > ID)
+            //1. para poder ejecutar algo necesitamos referenciarlo,
+            //le damos un identificador a la transición (clicamos en la trans inconcd > 4ª opc > ID)
             //PARA EJECUTAR LA TRANSICIÓN USAMOS:
             //self
             //el primer parámetro es el ID, y el segundo el sender (el remitente)

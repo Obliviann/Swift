@@ -35,8 +35,9 @@ class VCRegistrar: UIViewController {
         Auth.auth().createUser(withEmail: (txtEmail?.text)!, password: (txtNewPass?.text)!) { (user, error) in
             if (error==nil){ //si no hay error
                 self.performSegue(withIdentifier: "transReg", sender: self)
+                print("USER",user,"HAS BEEN CREATED")
             } else {
-                print("ERROR EN REGISTRO: ", error)
+                print("ERROR EN REGISTRO: ", error!)
             }
         }
     }
